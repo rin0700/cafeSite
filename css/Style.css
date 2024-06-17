@@ -1,0 +1,186 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #333;
+    --section-background: #fff;
+    --primary-color: #c2894b;
+    --accent-color: #C5956B;
+    --text-muted: #888;
+    --menu-effect: #6c3524;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0 0 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--primary-color);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-bar {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu-bar li a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.menu-bar li {
+    margin-bottom: 0px;
+}
+
+.menu-bar li a {
+    position: relative;
+    overflow: hidden;
+    transition: all .2s;
+}
+
+.menu-bar li a:hover {
+    background: var(--menu-effect);
+    color: #fff;
+}
+
+.menu-bar li a:hover {
+    transition-delay: .5s;
+}
+
+.menu-bar li a:before,
+.menu-bar li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--menu-effect);
+    transition: all .5s;
+}
+
+.menu-bar li a::before {
+    top: 0;
+    transform: translateX(-100%);
+}
+
+.menu-bar li a::after {
+    bottom: 0;
+    transform: translateX(100%);
+}
+
+.menu-bar li a:hover::before,
+.menu-bar li a:hover::after {
+    transform: translateX(0);
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#home {
+    background-image: url('cafe.jpg');
+    background-size: cover;
+    color: var(--text-color);
+}
+
+#menu .menu-item {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#menu .menu-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#menu .menu-item h3 {
+    color: var(--primary-color);
+}
+
+#menu .menu-item p {
+    color: #fff;
+}
+
+#menu .menu-item span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#form .form-index {
+    display: inline-block;
+    width: 400px;
+    margin: 20px;
+    background-color: #C5956B;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#form .form-index img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#form .form-index h3 {
+    color: black;
+}
+
+#form .form-index span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
