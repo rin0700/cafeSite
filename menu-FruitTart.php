@@ -59,7 +59,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2023 おしゃれなカフェ</p>
+    <p>&copy; 2023 Cafe dolce&calmato. All rights reserved.</p>
   </footer>
 
   <!-- Jsファイル -->
